@@ -26,7 +26,7 @@
         <a href="javascript:void(0)" id="provide" class="curTab">报料广场</a>
         <a href="javascript:void(0)" id="myProvide">我的报料</a>
     </div>
-    <div id="provide_content">
+    <div id="provide_content" style="display:none">
         <a href="">
             <dl>
                 <dt><img src="images/img-provide.png" alt="" class="imgBlock100"></dt>
@@ -63,8 +63,8 @@
     </div>
     <div id="myProvide_content" style="display:none;">
         <div class="item_group">
-            <input type="tel" name="tel" placeholder="输入您的手机号"/>
-            <input type="text" name="ID" placeholder="输入您的手机号"/>
+            <input type="tel" name="tel" placeholder="请输入手机号"/>
+            <input type="text" name="ID" placeholder="请输入报料ID"/>
             <button id="checkout">查询我的报料</button>
         </div>
     </div>
@@ -77,8 +77,116 @@
             <button id="submit">上传发布报料信息</button>
         </div>
     </div>
+    <div id="checkout_result">
+        <h1><img src="images/search_icon.png" alt="">报料结果查询系统</h1>
+        <!--<ul>
+            <li><span>报料ID</span><span>处理进度</span></li>
+            <li><span>23223423443</span><span>已播出</span></li>
+            <li><span>23223423443</span><span>已播出</span></li>
+            <li><span>23223423443</span><span>已播出</span></li>
+            <li><span>23223423443</span><span>已播出</span></li>
+            <li><span>23223423443</span><span>已播出</span></li>
+        </ul>-->
+        <div class="checkout_result_wrap">
+            <div class="result_wrap_tab"><span>报料ID</span><span>处理进度</span></div>
+            <dl>
+                <dt><span>23223423443</span><span>已播出</span></dt>
+                <dd>
+                    <div class="detail_wrap">
+                        <p>2016-03-05</p>
+                        <p>17:05</p>
+                        <p>
+                            <span>收到线索</span>
+                            <span>收到线索</span>
+                            <span>收到线索</span>
+                        </p>
+                    </div>
+                    <div class="detail_wrap">
+                        <p>2016-03-05</p>
+                        <p>17:05</p>
+                        <p>
+                            <span>收到线索</span>
+                            <span>收到线索</span>
+                            <span>收到线索</span>
+                        </p>
+                    </div>
+
+                </dd>
+            </dl>
+            <dl>
+                <dt><span>23223423443</span><span>已播出</span></dt>
+                <dd>
+                    <div class="detail_wrap">
+                        <p>2016-03-05</p>
+                        <p>17:05</p>
+                        <p>
+                            <span>收到线索</span>
+                            <span>收到线索</span>
+                            <span>收到线索</span>
+                        </p>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+                <dt><span>23223423443</span><span>已播出</span></dt>
+                <dd>
+                    <div class="detail_wrap">
+                        <p>2016-03-05</p>
+                        <p>17:05</p>
+                        <p>
+                            <span>收到线索</span>
+                            <span>收到线索</span>
+                            <span>收到线索</span>
+                        </p>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+                <dt><span>23223423443</span><span>已播出</span></dt>
+                <dd>
+                    <div class="detail_wrap">
+                        <p>2016-03-05</p>
+                        <p>17:05</p>
+                        <p>
+                            <span>收到线索</span>
+                            <span>收到线索</span>
+                            <span>收到线索</span>
+                        </p>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+                <dt><span>23223423443</span><span>已播出</span></dt>
+                <dd>
+                    <div class="detail_wrap">
+                        <p>2016-03-05</p>
+                        <p>17:05</p>
+                        <p>
+                            <span>收到线索</span>
+                            <span>收到线索</span>
+                            <span>收到线索</span>
+                        </p>
+                    </div>
+                </dd>
+            </dl>
+            <dl>
+                <dt><span>23223423443</span><span>已播出</span></dt>
+                <dd>
+                    <div class="detail_wrap">
+                        <p>2016-03-05</p>
+                        <p>17:05</p>
+                        <p>
+                            <span>收到线索</span>
+                            <span>收到线索</span>
+                            <span>收到线索</span>
+                        </p>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+    </div>
 </div>
-<div id="i_want_provide">
+<div id="i_want_provide" style="display:none;">
     <img src="images/i_want_provide.png" alt="">
 </div>
 <div id="sucLayer" style="display:none;">
@@ -86,10 +194,7 @@
     <span>您的报料ID是312312331</span>
     <button id="copyInfo">复制ID到剪切板</button>
 </div>
-<script src="js/zepto.js"></script>
-<script src="js/touch.js"></script>
-<script src="js/event.js"></script>
-<script src="js/ajax.js"></script>
+<script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/rem.js"></script>
 <script src="js/provider.js"></script>
 </body>
