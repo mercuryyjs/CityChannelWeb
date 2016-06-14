@@ -34,7 +34,7 @@
 })(Zepto);*/
 $(function(){
     $("#tab-btns>a").click(function(){
-        $("#provide_content,#myProvide_content,#i_want_provide,#iwantprovide_content").hide();
+        $("#provide_content,#myProvide_content,#i_want_provide,#iwantprovide_content,#checkout_result").hide();
         var index = $(this).index();
         $("#tab-btns>a").removeClass("curTab");
         $(this).addClass("curTab");
@@ -46,10 +46,14 @@ $(function(){
         }
     });
     $("#i_want_provide").click(function(){
-        $("#provide_content,#myProvide_content,#i_want_provide").hide();
+        $("#provide_content,#myProvide_content,#i_want_provide,#checkout_result").hide();
         $("#iwantprovide_content").show();
     });
     $(".checkout_result_wrap dt").click(function(){
         $(this).siblings("dd").slideToggle(300);
+    });
+    $("#checkout").click(function(){
+        $("#myProvide_content").hide();
+        $("#checkout_result").show();
     });
 });
