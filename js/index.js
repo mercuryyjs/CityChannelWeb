@@ -21,5 +21,4 @@ $(document).ready(function(){
         tabs.hide();
         tabs.eq(2).fadeIn();
     });
-
 });

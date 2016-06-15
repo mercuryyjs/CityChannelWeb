@@ -56,4 +56,24 @@ $(function(){
         $("#myProvide_content").hide();
         $("#checkout_result").show();
     });
+    $("#file").on("change",function(){
+        var files = $(this).get(0).files;
+        for(var i=0;i<files.length;i++){
+            if(files[i].type != "image/jpeg" && files[i].type != "image/png"){
+                alert("您上传的"+files[i].name+"件格式不对！");
+                return;
+            }else{
+                var fileReader = new FileReader();
+                fileReader.readAsDataURL(files[i]);
+                fileReader.onloadend = function(e){
+                    var oDiv = document.createElement("div");
+                    var oImg = document.createElement("img");
+                    oImg.src = e.target.result;
+                    oDiv.appendChild(oImg);
+                    $("#files_wrap").prepend(oDiv);
+                    $("#iwantprovide_content .item_group input[name=file]").css("float","left");
+                }
+            }
+        }
+    });
 });

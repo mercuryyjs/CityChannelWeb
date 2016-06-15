@@ -40,4 +40,7 @@ nav>a{float:left;width:12.5%;margin:0 3.75%;color:#fff;font-size:0.675rem;height
 #sponsor .item_group>textarea{width:100%;border:1px solid #d5d1c8;border-radius:5px;height:7.425rem; resize: none;padding-left:3%;padding-top:0.625rem;margin-bottom:0.8rem;}
 #sponsor .item_group>input[name=file]{text-indent:1000em;width:3.95rem;height:3.95rem;margin:0 auto;display:block;background:url("../images/file-upload-bg.png") no-repeat;background-size:100% 100%;color:transparent;border-radius:0;}
 #sponsor .item_group>p{width:100%;height:1.375rem;line-height:1.375rem;color:#9f9f9f;font-size:0.6rem;text-align:center;}
-#submit{display:block;margin:0 auto;margin-top:0.2rem;width:45.3125%;height:1.75rem;line-height:1.75rem;color:#fff;text-align:center;background-color:#5d81d7;padding:0;border:none;outline:none;border-radius:5px;font-size:0.675rem;}
+#submit{display:block;margin:0 auto;margin-top:0.2rem;width:45.3125%;height:1.75rem;line-height:1.75rem;color:#fff;text-align:center;background-color:#5d81d7;padding:0;border:none;outline:none;border-radius:5px;font-size:0.675rem;margin-bottom:0.675rem;}
+input,textarea{
+    -webkit-appearance: none;
+}
